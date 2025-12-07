@@ -136,10 +136,10 @@ const navData = [
         "logo": "../assets/images/logos/nodeseek.png"
       },
       {
-        "title": "猎云网",
-        "desc": "互联网创业项目推荐和创业创新资讯",
-        "url": "http://www.lieyunwang.com/",
-        "logo": "../assets/images/logos/lieyunwang.png"
+        "title": "少数派",
+        "desc": "高品质数字消费指南",
+        "url": "https://sspai.com/",
+        "logo": "../assets/images/logos/sspai.png"
       },
       {
         "title": "人人都是产品经理",
