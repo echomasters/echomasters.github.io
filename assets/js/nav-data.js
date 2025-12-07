@@ -71,9 +71,9 @@ const navData = [
       },
       {
         "title": "知乎",
-        "desc": "高品质数字消费指南",
-        "url": "https://sspai.com/",
-        "logo": "../assets/images/logos/sspai.png"
+        "desc": "有问题，就会有答案",
+        "url": "https://www.zhihu.com/",
+        "logo": "../assets/images/logos/zhihu.png"
       }
     ]
   },
@@ -104,18 +104,6 @@ const navData = [
         "desc": "最新设计资讯（每天更新）",
         "url": "https://www.shejizhoukan.com/",
         "logo": "../assets/images/logos/shejizhoukan.png"
-      },
-      {
-        "title": "字体仓库",
-        "desc": "最全的免费商用字体库",
-        "url": "https://www.ziticangku.com/",
-        "logo": "../assets/images/logos/ziticangku.png"
-      },
-      {
-        "title": "电鸭社区",
-        "desc": "国内最早的远程工作社区，也是互联网工作者们的聚集地，非常适合设计开发小伙伴关注",
-        "url": "https://eleduck.com/",
-        "logo": "../assets/images/logos/eleduck.png"
       }
     ]
   },
@@ -146,59 +134,11 @@ const navData = [
         "desc": "高品质数字消费指南",
         "url": "https://sspai.com/",
         "logo": "../assets/images/logos/sspai.png"
-      },
-      {
-        "title": "人人都是产品经理",
-        "desc": "产品经理、产品爱好者学习交流平台",
-        "url": "http://www.woshipm.com/",
-        "logo": "../assets/images/logos/woshipm.png"
-      },
-      {
-        "title": "互联网早读课",
-        "desc": "互联网行业深度阅读与学习平台",
-        "url": "https://www.zaodula.com/",
-        "logo": "../assets/images/logos/zaodula.png"
-      },
-      {
-        "title": "产品壹佰",
-        "desc": "为产品经理爱好者提供最优质的产品资讯、原创内容和相关视频课程",
-        "url": "http://www.chanpin100.com/",
-        "logo": "../assets/images/logos/chanpin100.png"
-      },
-      {
-        "title": "PMCAFF",
-        "desc": "中国第一产品经理人气组织，专注于研究互联网产品",
-        "url": "http://www.pmcaff.com/",
-        "logo": "../assets/images/logos/pmcaff.png"
-      },
-      {
-        "title": "爱运营",
-        "desc": "网站运营人员学习交流，专注于网站产品运营管理、淘宝运营。",
-        "url": "http://www.iyunying.org/",
-        "logo": "../assets/images/logos/iyunying.png"
-      },
-      {
-        "title": "鸟哥笔记",
-        "desc": "移动互联网第一干货平台",
-        "url": "http://www.niaogebiji.com/",
-        "logo": "../assets/images/logos/niaogebiji.png"
-      },
-      {
-        "title": "古田路9号",
-        "desc": "国内专业品牌创意平台",
-        "url": "http://www.gtn9.com/",
-        "logo": "../assets/images/logos/gtn9.png"
-      },
-      {
-        "title": "优阁网",
-        "desc": "UI设计师学习交流社区",
-        "url": "http://www.uigreat.com/",
-        "logo": "../assets/images/logos/uigreat.png"
       }
     ]
   },
   {
-    "category": "测试产品",
+    "category": "AI工作流",
     "icon": "linecons-tag",
     "items": [
       {
@@ -240,7 +180,7 @@ const navData = [
     ]
   },
   {
-    "category": "测试界面灵感",
+    "category": "界面灵感",
     "icon": "linecons-tag",
     "items": [
       {
@@ -270,7 +210,7 @@ const navData = [
     ]
   },
   {
-    "category": "网页灵感",
+    "category": "在线工具",
     "icon": "linecons-tag",
     "items": [
       {
