@@ -68,6 +68,12 @@ const navData = [
         "desc": "全球最大的UI学习分享平台",
         "url": "https://www.google.com/",
         "logo": "../assets/images/logos/google.png"
+      },
+      {
+        "title": "知乎",
+        "desc": "高品质数字消费指南",
+        "url": "https://sspai.com/",
+        "logo": "../assets/images/logos/sspai.png"
       }
     ]
   },
