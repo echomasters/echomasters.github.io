@@ -4,58 +4,40 @@ const navData = [
     "icon": "linecons-tag",
     "items": [
       {
-        "title": "Dribbble",
-        "desc": "全球UI设计师作品分享平台。",
-        "url": "https://dribbble.com/",
-        "logo": "../assets/images/logos/dribbble.png"
+        "title": "Bilibili",
+        "desc": "哔哩哔哩 (゜-゜)つロ 干杯~",
+        "url": "https://www.bilibili.com/",
+        "logo": "../assets/images/logos/bilibili.png"
       },
       {
-        "title": "Behance",
-        "desc": "Adobe旗下的设计师交流平台，来自世界各地的设计师在这里分享自己的作品。",
-        "url": "https://behance.net/",
-        "logo": "../assets/images/logos/behance.png"
+        "title": "知乎",
+        "desc": "有问题，就会有答案",
+        "url": "https://www.zhihu.com/",
+        "logo": "../assets/images/logos/zhihu.png"
       },
       {
-        "title": "UI中国",
-        "desc": "图形交互与界面设计交流、作品展示、学习平台。",
-        "url": "http://www.ui.cn/",
-        "logo": "../assets/images/logos/uicn.png"
+        "title": "小红书",
+        "desc": "分享生活，记录美好",
+        "url": "https://www.xiaohongshu.com/",
+        "logo": "../assets/images/logos/xiaohongshu.png"
       },
       {
-        "title": "站酷",
-        "desc": "中国人气设计师互动平台",
-        "url": "http://www.zcool.com.cn/",
-        "logo": "../assets/images/logos/zcool.png"
+        "title": "集思录",
+        "desc": "以数据为核心的投资社区",
+        "url": "http://www.jisilu.com/",
+        "logo": "../assets/images/logos/jisilu.png"
       },
       {
-        "title": "Pinterest",
-        "desc": "全球美图收藏采集站",
-        "url": "https://www.pinterest.com/",
-        "logo": "../assets/images/logos/pinterest.png"
+        "title": "雪球",
+        "desc": "聪明的投资者都在这里",
+        "url": "http://www.xueqiu.com/",
+        "logo": "../assets/images/logos/xueqiu.png"
       },
       {
-        "title": "花瓣",
-        "desc": "收集灵感,保存有用的素材",
-        "url": "http://huaban.com/",
-        "logo": "../assets/images/logos/huaban.png"
-      },
-      {
-        "title": "Medium",
-        "desc": "高质量设计文章",
-        "url": "https://medium.com/",
-        "logo": "../assets/images/logos/medium.png"
-      },
-      {
-        "title": "优设",
-        "desc": "设计师交流学习平台",
-        "url": "http://www.uisdc.com/",
-        "logo": "../assets/images/logos/uisdc.png"
-      },
-      {
-        "title": "Producthunt",
-        "desc": "发现新鲜有趣的产品",
-        "url": "https://www.producthunt.com/",
-        "logo": "../assets/images/logos/producthunt.png"
+        "title": "微信读书",
+        "desc": "让阅读不再孤独",
+        "url": "https://weread.qq.com/web/shelf",
+        "logo": "../assets/images/logos/weread.png"
       },
       {
         "title": "Youtube",
@@ -68,12 +50,6 @@ const navData = [
         "desc": "全球最大的UI学习分享平台",
         "url": "https://www.google.com/",
         "logo": "../assets/images/logos/google.png"
-      },
-      {
-        "title": "知乎",
-        "desc": "有问题，就会有答案",
-        "url": "https://www.zhihu.com/",
-        "logo": "../assets/images/logos/zhihu.png"
       }
     ]
   },
@@ -88,10 +64,10 @@ const navData = [
         "logo": "../assets/images/logos/aliyun.png"
       },
       {
-        "title": "咕噜素材",
-        "desc": "质量很高的设计素材网站（推荐）",
-        "url": "https://www.gulusucai.com/",
-        "logo": "../assets/images/logos/gulusucai.png"
+        "title": "QQ邮箱",
+        "desc": "常联系",
+        "url": "https://mail.qq.com/",
+        "logo": "../assets/images/logos/qqmail.png"
       },
       {
         "title": "花云-科学上网",
@@ -100,10 +76,10 @@ const navData = [
         "logo": "../assets/images/logos/huacloud.png"
       },
       {
-        "title": "设计周刊",
-        "desc": "最新设计资讯（每天更新）",
-        "url": "https://www.shejizhoukan.com/",
-        "logo": "../assets/images/logos/shejizhoukan.png"
+        "title": "华为云课堂",
+        "desc": "华为云的在线学习平台",
+        "url": "https://edu.huaweicloud.com/",
+        "logo": "../assets/images/logos/huawei.png"
       }
     ]
   },
@@ -134,6 +110,18 @@ const navData = [
         "desc": "高品质数字消费指南",
         "url": "https://sspai.com/",
         "logo": "../assets/images/logos/sspai.png"
+      },
+      {
+        "title": "Hacker News",
+        "desc": "科技新闻网站",
+        "url": "https://news.ycombinator.com/",
+        "logo": "../assets/images/logos/hackernews.png"
+      },
+      {
+        "title": "XDA Developers",
+        "desc": "科技新闻网站",
+        "url": "https://www.xda-developers.com/",
+        "logo": "../assets/images/logos/xda.png"
       }
     ]
   },
@@ -142,16 +130,16 @@ const navData = [
     "icon": "linecons-tag",
     "items": [
       {
-        "title": "Producthunt",
-        "desc": "发现新鲜有趣的产品",
-        "url": "https://www.producthunt.com/",
-        "logo": "../assets/images/logos/producthunt.png"
+        "title": "Banana",
+        "desc": "Nano Banana Pro 提示词",
+        "url": "https://youmind.com/zh-CN/nano-banana-pro-prompts",
+        "logo": "../assets/images/logos/banana.png"
       },
       {
-        "title": "NEXT",
-        "desc": "不错过任何一个新产品",
-        "url": "http://next.36kr.com/posts",
-        "logo": "../assets/images/logos/NEXT.png"
+        "title": "GEMINI",
+        "desc": "GEMINI 3 PRO 提示词",
+        "url": "https://youmind.com/zh-CN/gemini-3-prompts",
+        "logo": "../assets/images/logos/gemini.png"
       },
       {
         "title": "少数派",
@@ -214,10 +202,10 @@ const navData = [
     "icon": "linecons-tag",
     "items": [
       {
-        "title": "Awwwards",
-        "desc": "Awwwards are the Website Awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.",
-        "url": "https://www.awwwards.com/",
-        "logo": "../assets/images/logos/awwwards.png"
+        "title": "TinyPNG",
+        "desc": "PNG compression tool",
+        "url": "https://tinypng.com/",
+        "logo": "../assets/images/logos/tinypng-panda.png"
       },
       {
         "title": "CSS Design Awards",
