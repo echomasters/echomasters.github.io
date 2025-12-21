@@ -1,7 +1,7 @@
 const navData = [
   {
     "category": "常用推荐",
-    "icon": "linecons-tag",
+    "icon": "linecons-star",
     "items": [
       {
         "title": "Bilibili",
@@ -55,7 +55,7 @@ const navData = [
   },
   {
     "category": "推荐",
-    "icon": "linecons-tag",
+    "icon": "linecons-thumbs-up",
     "items": [
       {
         "title": "阿里云",
@@ -85,7 +85,7 @@ const navData = [
   },
   {
     "category": "社区资讯",
-    "icon": "linecons-tag",
+    "icon": "linecons-globe",
     "items": [
       {
         "title": "Linux do",
@@ -127,7 +127,7 @@ const navData = [
   },
   {
     "category": "AI工作流",
-    "icon": "linecons-tag",
+    "icon": "linecons-beaker",
     "items": [
       {
         "title": "Banana",
@@ -169,7 +169,7 @@ const navData = [
   },
   {
     "category": "界面灵感",
-    "icon": "linecons-tag",
+    "icon": "linecons-lightbulb",
     "items": [
       {
         "title": "Pttrns",
@@ -199,7 +199,7 @@ const navData = [
   },
   {
     "category": "在线工具",
-    "icon": "linecons-tag",
+    "icon": "linecons-params",
     "items": [
       {
         "title": "TinyPNG",
