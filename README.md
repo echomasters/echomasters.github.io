@@ -1,4 +1,4 @@
-## WebStack - 个人网址导航
+### WebStack - 个人网址导航
 
 
 一个基于 [WebStackPage](https://github.com/WebStackPage/WebStackPage.github.io) 的极简、高效个人网址导航页。
@@ -8,18 +8,7 @@
 
 ---
 
-
-#### 1. 数据结构与逻辑优化
-引入 `nav-data.js` 与 `nav-renderer.js`，将数据与视图解耦，只需编辑 JSON 即可管理导航。
-
-#### 2. 性能优化
-移除 Google Fonts、Google Analytics 及广告代码。
-核心资源本地化部署，提升加载速度。
-
-#### 3. 品牌与信息更新
-定位: 转型为通用“个人网址导航”。
-地址: 更新为 `nav.555212.xyz`。
-SEO: 优化 Title、Description 与 Keywords。
+引入 `nav-data.js` 与 `nav-renderer.js`，将数据与视图解耦，只需编辑 JSON 即可管理导航。移除 Google Fonts、Google Analytics 及广告代码，核心资源本地化部署，提升加载速度。转型为通用“个人网址导航”，SEO优化 Title、Description 与 Keywords。
 
 ---
 
