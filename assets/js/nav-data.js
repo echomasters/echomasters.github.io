@@ -122,6 +122,12 @@ const navData = [
         "desc": "科技新闻网站",
         "url": "https://www.xda-developers.com/",
         "logo": "../assets/images/logos/xda.png"
+      },
+      {
+        "title": "一飞周报",
+        "desc": "美股财经周报",
+        "url": "https://harryyifei.notion.site/a8005aa0030f46519e7aa51e56577ffd?v=4e6fa2e482f24d6b8859b0ca1152795f",
+        "logo": "../assets/images/logos/mockupworld.png"
       }
     ]
   },
