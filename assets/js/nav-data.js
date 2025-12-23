@@ -12,7 +12,7 @@ const navData = [
       {
         "title": "知乎",
         "desc": "有问题，就会有答案",
-        "url": "https://www.zhihu.com/",
+        "url": "https://www.zhihu.com/hot",
         "logo": "../assets/images/logos/zhihu.png"
       },
       {
@@ -128,6 +128,12 @@ const navData = [
         "desc": "美股财经周报",
         "url": "https://harryyifei.notion.site/a8005aa0030f46519e7aa51e56577ffd?v=4e6fa2e482f24d6b8859b0ca1152795f",
         "logo": "../assets/images/logos/mockupworld.png"
+      },
+      {
+        "title": "总统追踪器",
+        "desc": "追踪美国总统动向",
+        "url": "https://civictracker.us/executive/member/?uuid=3094abf7-4a95-4b8d-8c8d-af7d1c3747a1",
+        "logo": "../assets/images/logos/president.png"
       }
     ]
   },
@@ -142,34 +148,10 @@ const navData = [
         "logo": "../assets/images/logos/banana.png"
       },
       {
-        "title": "GEMINI",
-        "desc": "GEMINI 3 PRO 提示词",
+        "title": "Gemini",
+        "desc": "Gemini 3 Pro 提示词",
         "url": "https://youmind.com/zh-CN/gemini-3-prompts",
         "logo": "../assets/images/logos/gemini.png"
-      },
-      {
-        "title": "少数派",
-        "desc": "高品质数字消费指南",
-        "url": "https://sspai.com/",
-        "logo": "../assets/images/logos/sspai.png"
-      },
-      {
-        "title": "利器",
-        "desc": "创造者和他们的工具",
-        "url": "http://liqi.io/",
-        "logo": "../assets/images/logos/liqi.png"
-      },
-      {
-        "title": "Today",
-        "desc": "为身边的新产品喝彩",
-        "url": "http://today.itjuzi.com/",
-        "logo": "../assets/images/logos/today.png"
-      },
-      {
-        "title": "小众软件",
-        "desc": "在这里发现更多有趣的应用",
-        "url": "https://faxian.appinn.com/",
-        "logo": "../assets/images/logos/appinn.png"
       }
     ]
   },
@@ -178,10 +160,10 @@ const navData = [
     "icon": "linecons-lightbulb",
     "items": [
       {
-        "title": "Pttrns",
-        "desc": "Check out the finest collection of design patterns, resources, mobile apps and inspiration",
-        "url": "https://www.pttrns.com/",
-        "logo": "../assets/images/logos/Pttrns.png"
+        "title": "Cloudflare",
+        "desc": "Cloudflare 官网",
+        "url": "https://www.cloudflare.com/",
+        "logo": "../assets/images/logos/cloudflare.png"
       },
       {
         "title": "Collect UI",
@@ -209,9 +191,21 @@ const navData = [
     "items": [
       {
         "title": "TinyPNG",
-        "desc": "PNG compression tool",
+        "desc": "PNG图片压缩工具",
         "url": "https://tinypng.com/",
         "logo": "../assets/images/logos/tinypng-panda.png"
+      },
+      {
+        "title": "Remove.bg",
+        "desc": "图片背景去除工具",
+        "url": "https://www.remove.bg/zh",
+        "logo": "../assets/images/logos/removebg.png"
+      },
+      {
+        "title": "Adobe Acrobat",
+        "desc": "在线PDF编辑工具",
+        "url": "https://acrobat.adobe.com/",
+        "logo": "../assets/images/logos/acrobat.png"
       }
     ]
   }
