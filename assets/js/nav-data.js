@@ -152,6 +152,12 @@ const navData = [
         "desc": "Gemini 3 Pro 提示词",
         "url": "https://youmind.com/zh-CN/gemini-3-prompts",
         "logo": "../assets/images/logos/gemini.png"
+      },
+      {
+        "title": "扣子空间",
+        "desc": "聘请各行业专家为你解决问题",
+        "url": "https://space.coze.cn/expert",
+        "logo": "../assets/images/logos/coze.png"
       }
     ]
   },
@@ -166,10 +172,10 @@ const navData = [
         "logo": "../assets/images/logos/cloudflare.png"
       },
       {
-        "title": "Collect UI",
-        "desc": "Daily inspiration collected from daily ui archive and beyond.",
-        "url": "http://collectui.com/",
-        "logo": "../assets/images/logos/CollectUI.png"
+        "title": "GitHub",
+        "desc": "GitHub 官网",
+        "url": "https://github.com/",
+        "logo": "../assets/images/logos/github.png"
       },
       {
         "title": "UI uigreat",
