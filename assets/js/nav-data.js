@@ -212,6 +212,12 @@ const navData = [
         "desc": "在线PDF编辑工具",
         "url": "https://acrobat.adobe.com/",
         "logo": "../assets/images/logos/acrobat.png"
+      },
+      {
+        "title": "Canva",
+        "desc": "在线设计工具",
+        "url": "https://www.canva.com/",
+        "logo": "../assets/images/logos/canva.png"
       }
     ]
   }
