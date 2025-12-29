@@ -24,7 +24,7 @@ const navData = [
       {
         "title": "集思录",
         "desc": "以数据为核心的投资社区",
-        "url": "http://www.jisilu.com/",
+        "url": "https://www.jisilu.cn/",
         "logo": "../assets/images/logos/jisilu.png"
       },
       {
@@ -158,6 +158,12 @@ const navData = [
         "desc": "聘请各行业专家为你解决问题",
         "url": "https://space.coze.cn/expert",
         "logo": "../assets/images/logos/coze.png"
+      },
+      {
+        "title": "NotebookLM",
+        "desc": "NotebookLM 笔记本",
+        "url": "https://notebooklm.google.com/",
+        "logo": "../assets/images/logos/notebooklm.png"
       }
     ]
   },
