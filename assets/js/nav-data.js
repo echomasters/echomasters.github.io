@@ -40,16 +40,16 @@ const navData = [
         "logo": "../assets/images/logos/weread.png"
       },
       {
-        "title": "Youtube",
-        "desc": "全球最大的学习分享平台",
-        "url": "https://www.youtube.com/",
-        "logo": "../assets/images/logos/youtube.png"
+        "title": "QQ邮箱",
+        "desc": "常联系",
+        "url": "https://mail.qq.com/",
+        "logo": "../assets/images/logos/qqmail.png"
       },
       {
-        "title": "Google",
-        "desc": "全球最大的UI学习分享平台",
-        "url": "https://www.google.com/",
-        "logo": "../assets/images/logos/google.png"
+        "title": "HaoETF",
+        "desc": "QDII基金实时溢价率与估值",
+        "url": "https://www.haoetf.com/",
+        "logo": "../assets/images/logos/haoetf.png"
       }
     ]
   },
@@ -61,13 +61,7 @@ const navData = [
         "title": "阿里云",
         "desc": "点击领取2000元限量云产品优惠券",
         "url": "https://www.aliyun.com/minisite/goods?userCode=xtct5egx&share_source=copy_link",
-        "logo": "../assets/images/logos/aliyun.png"
-      },
-      {
-        "title": "QQ邮箱",
-        "desc": "常联系",
-        "url": "https://mail.qq.com/",
-        "logo": "../assets/images/logos/qqmail.png"
+        "logo": "../assets/images/logos/alibabacloud.png"
       },
       {
         "title": "花云-科学上网",
@@ -224,6 +218,36 @@ const navData = [
         "desc": "在线设计工具",
         "url": "https://www.canva.com/",
         "logo": "../assets/images/logos/canva.png"
+      }
+    ]
+  },
+  {
+    "category": "自建网站",
+    "icon": "linecons-server",
+    "items": [
+      {
+        "title": "Xcho's Blog",
+        "desc": "个人博客与技术分享",
+        "url": "https://555212.xyz/",
+        "logo": "../assets/images/logos/Coda.png"
+      },
+      {
+        "title": "File Browser",
+        "desc": "个人私有云及在线文件管理",
+        "url": "https://file.555212.xyz/",
+        "logo": "../assets/images/logos/filebrowser.png"
+      },
+      {
+        "title": "Web Check",
+        "desc": "全能的网站信息探测分析工具",
+        "url": "https://webcheck.555212.xyz/",
+        "logo": "../assets/images/logos/webcheck.png"
+      },
+      {
+        "title": "Uptime Kuma",
+        "desc": "站点在线状态实时监控检测",
+        "url": "https://uptime.555212.xyz/dashboard",
+        "logo": "../assets/images/logos/uptimekuma.png"
       }
     ]
   }
