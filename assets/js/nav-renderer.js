@@ -18,7 +18,7 @@ function renderNav() {
 
         category.items.forEach(function (item) {
             html += '<div class="col-sm-3">';
-            html += '<div class="xe-widget xe-conversations box2 label-info" onclick="window.open(\'' + item.url + '\', \'_blank\')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="' + item.url + '">';
+            html += '<div class="xe-widget xe-conversations box2 label-info" onclick="window.open(\'' + item.url + '\', \'_blank\', \'noopener,noreferrer\')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="' + item.url + '">';
             html += '<div class="xe-comment-entry">';
             html += '<a class="xe-user-img">';
             html += '<img data-src="' + item.logo + '" class="lozad img-circle" width="40">';
