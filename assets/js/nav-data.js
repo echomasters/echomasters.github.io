@@ -223,7 +223,7 @@ const navData = [
   },
   {
     "category": "自建网站",
-    "icon": "linecons-server",
+    "icon": "linecons-cloud",
     "items": [
       {
         "title": "Xcho's Blog",

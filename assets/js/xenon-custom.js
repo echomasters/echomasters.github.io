@@ -52,6 +52,14 @@ var public_vars = public_vars || {};
 		}
 
 
+		// Restore sidebar state
+		var sidebar_collapsed = localStorage.getItem('sidebar_collapsed');
+		if (sidebar_collapsed === 'true') {
+			public_vars.$sidebarMenu.addClass('collapsed');
+		} else if (sidebar_collapsed === 'false') {
+			public_vars.$sidebarMenu.removeClass('collapsed');
+		}
+
 		// Setup Sidebar Menu
 		setup_sidebar_menu();
 

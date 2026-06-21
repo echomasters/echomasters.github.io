@@ -119,11 +119,13 @@
 				if(public_vars.$sidebarMenu.hasClass('collapsed'))
 				{
 					public_vars.$sidebarMenu.removeClass('collapsed');
+					localStorage.setItem('sidebar_collapsed', 'false');
 					ps_init();
 				}
 				else
 				{
 					public_vars.$sidebarMenu.addClass('collapsed');
+					localStorage.setItem('sidebar_collapsed', 'true');
 					ps_destroy();
 				}
 
