@@ -250,5 +250,17 @@ const navData = [
         "logo": "../assets/images/logos/uptimekuma.png"
       }
     ]
+  },
+  {
+    "category": "装机工具",
+    "icon": "linecons-desktop",
+    "items": [
+      {
+        "title": "LDTools",
+        "desc": "非盈利性工具索引网站，收录各类纯净无捆绑的装机工具",
+        "url": "https://tool.pc.wiki/",
+        "logo": "https://s0.ldt.pc.wiki/image/shared/laodi-64px.png"
+      }
+    ]
   }
 ];
