@@ -74,6 +74,12 @@ const navData = [
         "desc": "华为云的在线学习平台",
         "url": "https://edu.huaweicloud.com/",
         "logo": "../assets/images/logos/huawei.png"
+      },
+      {
+        "title": "百度网盘青春版",
+        "desc": "极速下载、无广告的百度网盘服务",
+        "url": "https://pan.baidu.com/youth/pan/main",
+        "logo": "../assets/images/logos/baiduyouth.png"
       }
     ]
   },
