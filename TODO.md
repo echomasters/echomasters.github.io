@@ -5,7 +5,7 @@
 In order to continuously improve user experience, boost project activity, and lay the foundation for adopting team security tools like 1Password, the following optimizations are planned:
 
 ## 🌟 Phase 1: UX Enhancements (Quick Wins)
-- [ ] **Global Fast Search (Local Search)**
+- [x] **Global Fast Search (Local Search)**
   - Implement real-time client-side fuzzy search based on `nav-data.js`.
 - [ ] **Dark Mode Toggle**
   - Add a Sun/Moon toggle button and persist user preference via `localStorage`.

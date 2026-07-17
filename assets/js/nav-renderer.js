@@ -1,22 +1,51 @@
 $(document).ready(function () {
     renderNav();
     renderSidebar();
+
+    // Bind search event (using event delegation and multiple events for compatibility)
+    $(document).on('input propertychange keyup change paste', '#search-input', function() {
+        renderNav($(this).val());
+    });
+
+    // Global keyboard listener: Focus search input when typing anywhere (即敲即搜)
+    $(document).on('keydown', function(e) {
+        // Ignore if user is already focused on an input or textarea
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        // Ignore modifier keys
+        if (e.ctrlKey || e.altKey || e.metaKey) return;
+        
+        // Check if it's a standard letter or number key
+        if ((e.keyCode >= 48 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 111) || e.keyCode >= 186) {
+            $('#search-input').focus();
+        }
+    });
 });
 
-function renderNav() {
+function renderNav(keyword = "") {
     const container = $('#main-content-container');
     if (!container.length) return;
 
     let html = '';
+    const lowerKeyword = keyword.toLowerCase();
 
     navData.forEach(function (category) {
+        // Filter items based on keyword
+        const filteredItems = category.items.filter(item => {
+            const titleMatch = item.title && item.title.toString().toLowerCase().includes(lowerKeyword);
+            const descMatch = item.desc && item.desc.toString().toLowerCase().includes(lowerKeyword);
+            return titleMatch || descMatch;
+        });
+
+        // Skip category if no items match
+        if (filteredItems.length === 0) return;
+
         // Render Category Header
         html += '<h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="' + category.category + '"></i>' + category.category + '</h4>';
 
         // Render Items
         html += '<div class="row">';
 
-        category.items.forEach(function (item) {
+        filteredItems.forEach(function (item) {
             html += '<div class="col-sm-3">';
             html += '<div class="xe-widget xe-conversations box2 label-info" onclick="window.open(\'' + item.url + '\', \'_blank\', \'noopener,noreferrer\')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="' + item.url + '">';
             html += '<div class="xe-comment-entry">';
