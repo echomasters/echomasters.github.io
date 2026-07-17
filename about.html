@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="viggo" />
-    <title>WebStack - Personal Navigation</title>
+    <title>WebStack - 个人网址导航</title>
     <meta name="keywords" content="个人主页,极简导航,网址收藏,私人书签,宝藏网站,导航页,WebStack,nav.555212.xyz">
     <meta name="description" content="WebStack - 个性化私人网址导航。摒弃繁杂，只留精品，汇聚我日常使用的优质站点与工具，打造最简单的上网主页。">
-    <link rel="shortcut icon" href="../assets/images/favicon.png">
-    <link rel="stylesheet" href="../assets/css/fonts/linecons/css/linecons.css">
-    <link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
-    <link rel="stylesheet" href="../assets/css/xenon-core.css">
-    <link rel="stylesheet" href="../assets/css/xenon-components.css">
-    <link rel="stylesheet" href="../assets/css/xenon-skins.css">
-    <link rel="stylesheet" href="../assets/css/nav.css">
-    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/xenon-core.css">
+    <link rel="stylesheet" href="assets/css/xenon-components.css">
+    <link rel="stylesheet" href="assets/css/xenon-skins.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,18 +39,24 @@
     <meta name="twitter:image" content="http://nav.555212.xyz/assets/images/webstack_banner_cn.png">
 </head>
 
-<body class="page-body boxed-container">
+<body class="page-body boxed-container" data-i18n-title-key="title_about">
     <nav class="navbar horizontal-menu navbar-fixed-top">
         <div class="navbar-inner">
             <div class="navbar-brand">
                 <a href="index.html" class="logo">
-                    <img src="../assets/images/logo_dark@2x.png" width="100%" alt="" class="hidden-xs">
-                    <img src="../assets/images/logo@2x.png" width="100%" alt="" class="visible-xs">
+                    <img src="assets/images/logo_dark@2x.png" width="100%" alt="" class="hidden-xs">
+                    <img src="assets/images/logo@2x.png" width="100%" alt="" class="visible-xs">
                 </a>
             </div>
             <div class="navbar-mobile-clear"></div>
-            <div class="navbar-mobile-clear"></div>
-            <!-- Removed external S3 GitHub Ribbon for privacy and performance -->
+            <!-- Added Language Toggle switch for consistent experience -->
+            <ul class="navbar-nav right-links list-inline list-unstyled" style="float: right; margin-top: 25px; margin-right: 15px;">
+                <li>
+                    <a href="#" onclick="toggleLang(); return false;" data-i18n="lang_switch">
+                        <i class="fa-globe"></i> English
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
     <div class="page-container">
@@ -60,19 +66,19 @@
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <!-- 关于网站 -->
-                        <h4 class="text-gray">About the site</h4>
+                        <h4 class="text-gray" data-i18n="about_site">关于网站</h4>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <blockquote>
-                                        <p>This is a minimalist and efficient personal navigation page based on <strong>WebStackPage</strong>.</p>
-                                        <p>This project has been heavily <strong>customized</strong> from the original version, removing Google Fonts and Google Analytics to achieve <strong>zero external dependencies</strong> and <strong>local resources</strong> for lightning-fast loading.</p>
-                                        <p>It also introduces a <strong>data-driven view</strong> (nav-data.js), allowing you to easily manage navigation items by simply editing JSON data, without delving into complex HTML structures.</p>
+                                        <p data-i18n="about_site_p1">这是一个基于 <strong>WebStackPage</strong> 的极简、高效个人网址导航页。</p>
+                                        <p data-i18n="about_site_p2">本项目针对原版进行了深度的 <strong>定制化改造</strong>，移除了 Google Fonts 和 Google Analytics，实现了 <strong>零外部依赖</strong> 和 <strong>资源本地化</strong>，确保国内环境秒开。</p>
+                                        <p data-i18n="about_site_p3">同时引入了 <strong>数据驱动视图</strong> (nav-data.js)，只需编辑 JSON 数据即可轻松管理导航项，无需深入复杂的 HTML 结构。</p>
                                     </blockquote>
                                 </div>
                             </div>
                             <!-- 关于项目 -->
-                            <h4 class="text-gray">About the project</h4>
+                            <h4 class="text-gray" data-i18n="about_project">关于项目</h4>
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="xe-widget xe-conversations box2 label-info"
@@ -81,13 +87,13 @@
                                         data-original-title="https://github.com/echomasters/WebStack">
                                         <div class="xe-comment-entry">
                                             <a class="xe-user-img">
-                                                <img src="../assets/images/logo@2x.png" class="img-circle" width="40">
+                                                <img src="assets/images/logo@2x.png" class="img-circle" width="40">
                                             </a>
                                             <div class="xe-comment">
                                                 <a href="#" class="xe-user-name overflowClip_1">
                                                     <strong>WebStack</strong>
                                                 </a>
-                                                <p class="overflowClip_2"> Minimalist & Efficient Personal Navigation.
+                                                <p class="overflowClip_2" data-i18n="about_project_desc"> Minimalist & Efficient Personal Navigation.
                                                 </p>
                                             </div>
                                         </div>
@@ -98,14 +104,15 @@
                                         <div class="col-sm-12">
                                             <br />
                                             <blockquote>
-                                                <p>
-                                                    This is an open source project, secondarily developed based on <a
-                                                        href="https://github.com/WebStackPage/WebStackPage.github.io">WebStackPage</a>.
+                                                <p data-i18n="about_project_p1">
+                                                    这是一个开源项目，基于 <a
+                                                        href="https://github.com/WebStackPage/WebStackPage.github.io">WebStackPage</a>
+                                                    二次开发。
                                                 </p>
-                                                <p>
-                                                    If you are interested in this project, or want to deploy your own personal navigation page, welcome to visit the <a
+                                                <p data-i18n="about_project_p2">
+                                                    如果您对本项目感兴趣，或者想要部署自己的个人导航页，欢迎访问 <a
                                                         href="https://github.com/echomasters/WebStack"><span
-                                                            class="label label-info">GitHub Project Page</span></a> for more information.
+                                                            class="label label-info">GitHub 项目主页</span></a> 获取更多信息。
                                                 </p>
                                             </blockquote>
                                         </div>
@@ -121,8 +128,9 @@
             <footer class="main-footer sticky footer-type-1 fixed">
                 <div class="footer-inner">
                     <div class="footer-text">
-                        &copy; 2017 - 2020
-                        <a href="../en/about.html"><strong>WebStack</strong></a> design by <a href="http://viggoz.com"
+                        &copy; 2017 - <span id="current-year"></span>
+                        <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+                        <a href="about.html"><strong>WebStack</strong></a> design by <a href="http://viggoz.com"
                             target="_blank"><strong>Viggo</strong></a>
                     </div>
                     <div class="go-up">
@@ -135,14 +143,15 @@
         </div>
     </div>
     <!-- Bottom Scripts -->
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/TweenMax.min.js"></script>
-    <script src="../assets/js/resizeable.js"></script>
-    <script src="../assets/js/joinable.js"></script>
-    <script src="../assets/js/xenon-api.js"></script>
-    <script src="../assets/js/xenon-toggles.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/resizeable.js"></script>
+    <script src="assets/js/joinable.js"></script>
+    <script src="assets/js/xenon-api.js"></script>
+    <script src="assets/js/xenon-toggles.js"></script>
     <!-- JavaScripts initializations and stuff -->
-    <script src="../assets/js/xenon-custom.js"></script>
+    <script src="assets/js/xenon-custom.js"></script>
+    <script src="assets/js/i18n.js"></script>
     <textarea tabindex="-1"
         style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arimo, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: 18.5714px; width: 53px;"
         class="autosizejs" id="autosizejs"></textarea>

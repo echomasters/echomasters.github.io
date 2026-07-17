@@ -1,5 +1,3 @@
-[**🇨🇳 中文版 (Chinese Version)**](./TODO.zh-CN.md)
-
 # WebStack Optimization Roadmap
 
 In order to continuously improve user experience, boost project activity, and lay the foundation for adopting team security tools like 1Password, the following optimizations are planned:
@@ -11,7 +9,7 @@ In order to continuously improve user experience, boost project activity, and la
   - Add a Sun/Moon toggle button and persist user preference via `localStorage`.
 
 ## 🚀 Phase 2: Architecture Upgrades
-- [ ] **Dynamic i18n**
+- [x] **Dynamic i18n**
   - Remove redundant `cn` and `en` directories; implement seamless language switching via a frontend dictionary.
 - [ ] **PWA Support**
   - Add `manifest.json` and `Service Worker` for offline caching and desktop installation.
