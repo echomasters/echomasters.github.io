@@ -31,17 +31,8 @@ const locales = {
     }
 };
 
-let currentLang = localStorage.getItem('lang') || 'zh';
-
-function setLang(lang) {
-    currentLang = lang;
-    localStorage.setItem('lang', lang);
-    applyLang();
-}
-
-function toggleLang() {
-    setLang(currentLang === 'zh' ? 'en' : 'zh');
-}
+const browserLang = (navigator.language || navigator.userLanguage).toLowerCase();
+let currentLang = browserLang.startsWith('zh') ? 'zh' : 'en';
 
 function applyLang() {
     const dict = locales[currentLang];

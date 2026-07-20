@@ -919,7 +919,8 @@ body {
     position: relative;
     width: 280px;
     background: #2c2e2f;
-    z-index: 1
+    z-index: 1;
+    vertical-align: top;
 }
 
 .sidebar-menu .logo-env {
@@ -1219,7 +1220,7 @@ body {
     }
     .sidebar-menu.collapsed .sidebar-menu-inner {
         overflow: visible;
-        position: relative
+        position: fixed
     }
     .sidebar-menu.collapsed .logo-env {
         padding: 18px 0
