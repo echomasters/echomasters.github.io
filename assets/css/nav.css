@@ -94,8 +94,8 @@ body {
     margin-top: auto;
 }
 
-/* Search box - extracted from inline styles */
-.search-form {
+/* Search box - match xenon-core specificity to override */
+.user-info-navbar .user-info-menu > li.search-form {
     margin-top: 22px;
     margin-left: 15px;
 }
