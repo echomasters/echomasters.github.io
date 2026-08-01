@@ -1,9 +1,26 @@
+/**
+ * Navigation renderer - dynamically builds the navigation grid and sidebar
+ * from nav-data.js data source.
+ */
+
+/**
+ * Escapes HTML special characters to prevent XSS attacks.
+ * @param {string} str - The string to escape
+ * @returns {string} The escaped HTML string
+ */
+function escapeHtml(str) {
+    if (!str) return '';
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
 $(document).ready(function () {
     renderNav();
     renderSidebar();
 
     // Bind search event (using event delegation and multiple events for compatibility)
-    $(document).on('input propertychange keyup change paste', '#search-input', function() {
+    $(document).on('input propertychange', '#search-input', function() {
         renderNav($(this).val());
     });
 
@@ -13,26 +30,27 @@ $(document).ready(function () {
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
         // Ignore modifier keys
         if (e.ctrlKey || e.altKey || e.metaKey) return;
-        
-        // Check if it's a standard letter or number key
-        if ((e.keyCode >= 48 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 111) || e.keyCode >= 186) {
+
+        // Check if it's a printable character key
+        if (e.key && e.key.length === 1) {
             $('#search-input').focus();
         }
     });
 });
 
-function renderNav(keyword = "") {
-    const container = $('#main-content-container');
+function renderNav(keyword) {
+    keyword = keyword || "";
+    var container = $('#main-content-container');
     if (!container.length) return;
 
-    let html = '';
-    const lowerKeyword = keyword.toLowerCase();
+    var html = '';
+    var lowerKeyword = keyword.toLowerCase();
 
     navData.forEach(function (category) {
         // Filter items based on keyword
-        const filteredItems = category.items.filter(item => {
-            const titleMatch = item.title && item.title.toString().toLowerCase().includes(lowerKeyword);
-            const descMatch = item.desc && item.desc.toString().toLowerCase().includes(lowerKeyword);
+        var filteredItems = category.items.filter(function(item) {
+            var titleMatch = item.title && item.title.toString().toLowerCase().indexOf(lowerKeyword) !== -1;
+            var descMatch = item.desc && item.desc.toString().toLowerCase().indexOf(lowerKeyword) !== -1;
             return titleMatch || descMatch;
         });
 
@@ -40,26 +58,32 @@ function renderNav(keyword = "") {
         if (filteredItems.length === 0) return;
 
         // Render Category Header
-        html += '<h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="' + category.category + '"></i>' + category.category + '</h4>';
+        var safeCategoryName = escapeHtml(category.category);
+        html += '<h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="' + safeCategoryName + '"></i>' + safeCategoryName + '</h4>';
 
         // Render Items
         html += '<div class="row">';
 
         filteredItems.forEach(function (item) {
+            var safeTitle = escapeHtml(item.title);
+            var safeDesc = escapeHtml(item.desc);
+            var safeUrl = escapeHtml(item.url);
+            var safeLogo = escapeHtml(item.logo);
+
             html += '<div class="col-sm-3">';
-            html += '<div class="xe-widget xe-conversations box2 label-info" onclick="window.open(\'' + item.url + '\', \'_blank\', \'noopener,noreferrer\')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="' + item.url + '">';
+            html += '<a class="xe-widget xe-conversations box2 nav-card" href="' + safeUrl + '" target="_blank" rel="noopener noreferrer" title="' + safeUrl + '">';
             html += '<div class="xe-comment-entry">';
-            html += '<a class="xe-user-img">';
-            html += '<img data-src="' + item.logo + '" class="lozad img-circle" width="40">';
-            html += '</a>';
+            html += '<span class="xe-user-img">';
+            html += '<img data-src="' + safeLogo + '" class="lozad img-circle" width="40" alt="' + safeTitle + '">';
+            html += '</span>';
             html += '<div class="xe-comment">';
-            html += '<a href="#" class="xe-user-name overflowClip_1">';
-            html += '<strong>' + item.title + '</strong>';
-            html += '</a>';
-            html += '<p class="overflowClip_2">' + item.desc + '</p>';
+            html += '<span class="xe-user-name overflowClip_1">';
+            html += '<strong>' + safeTitle + '</strong>';
+            html += '</span>';
+            html += '<p class="overflowClip_2">' + safeDesc + '</p>';
             html += '</div>'; // xe-comment
             html += '</div>'; // xe-comment-entry
-            html += '</div>'; // xe-widget
+            html += '</a>'; // nav-card
             html += '</div>'; // col-sm-3
         });
 
@@ -69,33 +93,26 @@ function renderNav(keyword = "") {
 
     container.html(html);
 
-    // Re-init tooltips
-    $('[data-toggle="tooltip"]').tooltip();
-
     // Re-init Lazy Loading
     if (typeof lozad === 'function') {
-        const observer = lozad();
+        var observer = lozad();
         observer.observe();
     }
 }
 
 function renderSidebar() {
-    const container = $('#main-menu');
-    // Prepend dynamic items. 
-    // We assume the static "About" link is at the bottom and we insert before it?
-    // Or we prepend to the list so they appear at the top?
-    // Usually main navigation is at the top.
+    var container = $('#main-menu');
 
-    let html = '';
+    var html = '';
     navData.forEach(function (category) {
+        var safeCategoryName = escapeHtml(category.category);
         html += '<li>';
-        html += '    <a href="#' + category.category + '" class="smooth">';
+        html += '    <a href="#' + safeCategoryName + '" class="smooth">';
         html += '        <i class="' + (category.icon || 'linecons-tag') + '"></i>';
-        html += '        <span class="title">' + category.category + '</span>';
+        html += '        <span class="title">' + safeCategoryName + '</span>';
         html += '    </a>';
         html += '</li>';
     });
 
-    // Determine where to insert. If we use prepend, it goes before the "About" link (assuming about link is there).
     container.prepend(html);
 }

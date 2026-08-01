@@ -93,3 +93,52 @@ body {
 .main-footer {
     margin-top: auto;
 }
+
+/* Search box - extracted from inline styles */
+.search-form {
+    margin-top: 22px;
+    margin-left: 15px;
+}
+
+.search-box {
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 250px;
+    max-width: calc(100vw - 80px);
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.search-box:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.3);
+    transition: all 0.2s ease;
+}
+
+/* Navigation card links - override Bootstrap a.label-info backgrounds */
+a.nav-card,
+a.nav-card:hover,
+a.nav-card:focus,
+a.nav-card:active,
+a.nav-card:visited {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Screen reader only text */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
