@@ -258,6 +258,18 @@ const navData = [
     ]
   },
   {
+    "category": "影音娱乐",
+    "icon": "linecons-music",
+    "items": [
+      {
+        "title": "爱壹帆",
+        "desc": "海量高清视频免费在线观看",
+        "url": "https://www.yifan.tv/",
+        "logo": "assets/images/logos/yifantv.png"
+      }
+    ]
+  },
+  {
     "category": "装机工具",
     "icon": "linecons-desktop",
     "items": [
