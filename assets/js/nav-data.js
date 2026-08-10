@@ -106,6 +106,12 @@ const navData = [
         "logo": "assets/images/logos/nodeseek.png"
       },
       {
+        "title": "Perplexity",
+        "desc": "AI 智能搜索引擎与资讯探索平台",
+        "url": "https://www.perplexity.ai/discover",
+        "logo": "assets/images/logos/perplexity.png"
+      },
+      {
         "title": "少数派",
         "desc": "高品质数字消费指南",
         "url": "https://sspai.com/",
@@ -182,18 +188,6 @@ const navData = [
         "desc": "GitHub 官网",
         "url": "https://github.com/",
         "logo": "assets/images/logos/github.png"
-      },
-      {
-        "title": "UI uigreat",
-        "desc": "APP界面截图参考",
-        "url": "http://ui.uigreat.com/",
-        "logo": "assets/images/logos/uiuigreat.png"
-      },
-      {
-        "title": "Android Niceties",
-        "desc": "A collection of screenshots encompassing some of the most beautiful looking Android apps.",
-        "url": "http://androidniceties.tumblr.com/",
-        "logo": "assets/images/logos/AndroidNiceties.png"
       }
     ]
   },
