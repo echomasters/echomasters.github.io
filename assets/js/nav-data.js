@@ -22,18 +22,6 @@ const navData = [
         "logo": "assets/images/logos/xiaohongshu.png"
       },
       {
-        "title": "集思录",
-        "desc": "以数据为核心的投资社区",
-        "url": "https://www.jisilu.cn/",
-        "logo": "assets/images/logos/jisilu.png"
-      },
-      {
-        "title": "雪球",
-        "desc": "聪明的投资者都在这里",
-        "url": "http://www.xueqiu.com/",
-        "logo": "assets/images/logos/xueqiu.png"
-      },
-      {
         "title": "微信读书",
         "desc": "让阅读不再孤独",
         "url": "https://weread.qq.com/web/shelf",
@@ -45,12 +33,6 @@ const navData = [
         "url": "https://mail.qq.com/",
         "logo": "assets/images/logos/qqmail.png"
       },
-      {
-        "title": "HaoETF",
-        "desc": "QDII基金实时溢价率与估值",
-        "url": "https://www.haoetf.com/",
-        "logo": "assets/images/logos/haoetf.png"
-      }
     ]
   },
   {
@@ -140,6 +122,36 @@ const navData = [
         "desc": "追踪美国总统动向",
         "url": "https://civictracker.us/executive/member/?uuid=3094abf7-4a95-4b8d-8c8d-af7d1c3747a1",
         "logo": "assets/images/logos/president.png"
+      }
+    ]
+  },
+  {
+    "category": "投资记录",
+    "icon": "linecons-money",
+    "items": [
+      {
+        "title": "雪球",
+        "desc": "聪明的投资者都在这里",
+        "url": "http://www.xueqiu.com/",
+        "logo": "assets/images/logos/xueqiu.png"
+      },
+      {
+        "title": "集思录",
+        "desc": "以数据为核心的投资社区",
+        "url": "https://www.jisilu.cn/",
+        "logo": "assets/images/logos/jisilu.png"
+      },
+      {
+        "title": "HaoETF",
+        "desc": "QDII基金实时溢价率与估值",
+        "url": "https://www.haoetf.com/",
+        "logo": "assets/images/logos/haoetf.png"
+      },
+      {
+        "title": "History of Market",
+        "desc": "市场历史数据与行情复盘",
+        "url": "https://historyofmarket.com/",
+        "logo": "https://historyofmarket.com/favicon.ico"
       }
     ]
   },
