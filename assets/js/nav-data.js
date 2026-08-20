@@ -33,23 +33,11 @@ const navData = [
         "url": "https://mail.qq.com/",
         "logo": "assets/images/logos/qqmail.png"
       },
-    ]
-  },
-  {
-    "category": "推荐",
-    "icon": "linecons-thumbs-up",
-    "items": [
       {
         "title": "阿里云",
         "desc": "点击领取2000元限量云产品优惠券",
         "url": "https://www.aliyun.com/minisite/goods?userCode=xtct5egx&share_source=copy_link",
         "logo": "assets/images/logos/alibabacloud.png"
-      },
-      {
-        "title": "花云-科学上网",
-        "desc": "优秀的科学上网（略贵，但是贼稳）",
-        "url": "https://flowercloud.net/clientarea.php",
-        "logo": "assets/images/logos/huacloud.png"
       },
       {
         "title": "华为云课堂",
@@ -200,6 +188,12 @@ const navData = [
         "desc": "GitHub 官网",
         "url": "https://github.com/",
         "logo": "assets/images/logos/github.png"
+      },
+      {
+        "title": "花云",
+        "desc": "优秀的科学上网（略贵，但是贼稳）",
+        "url": "https://flowercloud.net/clientarea.php",
+        "logo": "assets/images/logos/huacloud.png"
       }
     ]
   },
