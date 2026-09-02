@@ -140,6 +140,12 @@ const navData = [
         "desc": "市场历史数据与行情复盘",
         "url": "https://historyofmarket.com/",
         "logo": "https://historyofmarket.com/favicon.ico"
+      },
+      {
+        "title": "大道总纲",
+        "desc": "段永平投资问答录与商业思考",
+        "url": "https://duan.ayaseeri.com/",
+        "logo": "assets/images/logos/dadaozonggang.svg"
       }
     ]
   },
